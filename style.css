@@ -312,3 +312,25 @@ body {
     opacity: 1;
   }
 }
+
+/* Ensure text visibility across sections */
+.text-muted {
+  color: #94a3b8 !important; /* Default muted text color for better contrast */
+}
+
+.bg-dark-secondary .text-muted,
+.bg-dark-card .text-muted,
+footer.bg-dark .text-muted {
+  color: #e2e8f0 !important; /* Brighter text for dark backgrounds */
+}
+
+.bg-dark-secondary a.text-muted:hover,
+.bg-dark-card a.text-muted:hover,
+footer.bg-dark a.text-muted:hover {
+  color: var(--purple) !important; /* Hover effect for links */
+}
+
+.bg-dark-secondary .card-text.text-muted,
+.bg-dark-card .card-text.text-muted {
+  color: #d1d5db !important; /* Slightly darker for card text to maintain hierarchy */
+}
