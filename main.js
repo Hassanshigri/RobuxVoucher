@@ -528,7 +528,7 @@ function loadBlogPosts() {
                                 <span class="me-3">${new Date(featuredPost.date).toLocaleDateString()}</span>
                                 <span>${featuredPost.readTime}</span>
                             </div>
-                            <a href="/blog/ultimate-guide-earning-robux-2025/index.html" class="btn btn-gradient">
+                            <a href="/blog/ultimate-guide-earning-robux-2025/" class="btn btn-gradient">
                                 Read More <i class="fas fa-arrow-right ms-2"></i>
                             </a>
                         </div>
@@ -542,9 +542,9 @@ function loadBlogPosts() {
   otherPosts.forEach((post) => {
     let postUrl = "";
     if (post.id === 2) {
-      postUrl = "/blog/top-10-roblox-games-play-this-month/index.html";
+      postUrl = "/blog/top-10-roblox-games-play-this-month/";
     } else if (post.id === 3) {
-      postUrl = "/blog/how-stay-safe-while-gaming-online/index.html";
+      postUrl = "/blog/how-stay-safe-while-gaming-online/";
     }
     html += `
             <div class="col-md-6 col-lg-4">
@@ -601,7 +601,7 @@ function initializeForms() {
       }
       showAlert("Confirmation code has been sent to your email!", "success");
       setTimeout(() => {
-        window.location.href = "../index.html";
+        window.location.href = "../";
       }, 2000);
     });
   }
