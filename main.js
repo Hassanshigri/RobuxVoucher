@@ -198,11 +198,11 @@ const allProducts = [
 const blogPosts = [
   {
     id: 1,
-    title: "Ultimate Guide to Earning Robux in 2024",
+    title: "Ultimate Guide to Earning Robux in 2025",
     excerpt: "Discover the best legitimate ways to earn Robux and maximize your gaming experience in Roblox.",
     image: "https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=Robux+Guide",
     author: "Gaming Expert",
-    date: "2024-01-15",
+    date: "2025-01-15",
     category: "Guides",
     readTime: "5 min read",
     content: `
@@ -233,7 +233,7 @@ const blogPosts = [
     excerpt: "Check out the most popular and exciting Roblox games that are trending right now.",
     image: "https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Top+Games",
     author: "Game Reviewer",
-    date: "2024-01-12",
+    date: "2025-01-12",
     category: "Reviews",
     readTime: "7 min read",
     content: `
@@ -254,7 +254,7 @@ const blogPosts = [
     excerpt: "Essential tips for protecting yourself and your account while enjoying online gaming.",
     image: "https://via.placeholder.com/400x300/10B981/FFFFFF?text=Online+Safety",
     author: "Security Specialist",
-    date: "2024-01-10",
+    date: "2025-01-10",
     category: "Safety",
     readTime: "4 min read",
     content: `
@@ -528,7 +528,7 @@ function loadBlogPosts() {
                                 <span class="me-3">${new Date(featuredPost.date).toLocaleDateString()}</span>
                                 <span>${featuredPost.readTime}</span>
                             </div>
-                            <a href="/blog/ultimate-guide-earning-robux-2024/index.html" class="btn btn-gradient">
+                            <a href="/blog/ultimate-guide-earning-robux-2025/index.html" class="btn btn-gradient">
                                 Read More <i class="fas fa-arrow-right ms-2"></i>
                             </a>
                         </div>
