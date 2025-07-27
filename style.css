@@ -109,7 +109,10 @@ body {
   display: flex;
   align-items: center;
 }
-
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3); /* adds a dark tint for contrast */
+}
 
 .gradient-text {
   background: linear-gradient(135deg, #a855f7 0%, #38bdf8 100%);
@@ -130,7 +133,6 @@ body {
     background-position: 200% center;
   }
 }
-
 
 .min-vh-75 {
   min-height: 75vh;
