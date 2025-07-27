@@ -61,8 +61,8 @@ const allProducts = [
   {
     id: 4,
     name: "2500 Robux",
-    price: 12.49,
-    originalPrice: 14.99,
+    price: 25,
+    originalPrice: 29.99,
     image: "../images/25$.png",
     rating: 4.7,
     reviews: 1100,
