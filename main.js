@@ -74,7 +74,7 @@ const allProducts = [
     name: "3000 Robux",
     price: 30,
     originalPrice: 35.99,
-    image: "../images/30$.png",
+    image: "../images/img-2 new.png",
     rating: 4.8,
     reviews: 950,
     category: "Mid-Tier",

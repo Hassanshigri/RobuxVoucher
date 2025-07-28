@@ -36,13 +36,23 @@ body {
      background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%)
 }
 .bg-dark-card {
-      background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%)
+      background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%) 
+}
+
+.bg-dark-card {
+  background-color: #1e1e2f !important; 
+  color: #ffffff !important;        
+}
+
+.bg-dark-card option {
+  background-color: #1e1e2f; 
+  color: #ffffff;           
 }
 .border-purple {
   border-color: rgba(139, 92, 246, 0.3) !important;
 }
 
-/* Buttons */
+
 .btn-purple {
   background-color: var(--purple);
   border-color: var(--purple);
