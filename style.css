@@ -33,10 +33,10 @@ body {
   background-color: rgba(15, 23, 42, 0.95) !important;
 }
 .bg-dark-secondary {
-  background-color: var(--dark-secondary) !important;
+     background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%)
 }
 .bg-dark-card {
-  background-color: var(--dark-card) !important;
+      background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%)
 }
 .border-purple {
   border-color: rgba(139, 92, 246, 0.3) !important;
@@ -145,7 +145,7 @@ body {
 }
 
 .form-control.bg-dark {
-  background-color: var(--dark-card) !important;
+     background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
   border-color: #64748b;
   color: white;
 }
@@ -184,19 +184,32 @@ body {
 .product-card {
   transition: all 0.3s ease;
   cursor: pointer;
+  width: 380px;
 }
 
 .product-card:hover {
   transform: scale(1.05);
+  border: 2px solid  var(--purple) !important;
+}
+
+
+.card-3:hover{
+  border: 3px solid green !important;
+}
+.card-2:hover{
+  border: 3px solid #3b82f6 !important;
+}
+.card-1:hover{
+  border: 3px solid #8B5CF6 !important;
 }
 
 .product-image {
   transition: transform 0.3s ease;
 }
 
-.product-card:hover .product-image {
+/* .product-card:hover .product-image {
   transform: scale(1.1);
-}
+} */
 
 /* Badges */
 .badge-discount {
