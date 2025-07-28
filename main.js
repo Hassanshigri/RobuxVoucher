@@ -40,24 +40,6 @@ const featuredProducts = [
     category: "Premium",
     discount: 17,
   },
-];
-
-/**
- * All products data
- */
-const allProducts = [
-  {
-    id: 1,
-    name: "1500 Robux",
-    price: 15,
-    originalPrice: 5.99,
-    image: "../images/15$.png",
-    rating: 4.6,
-    reviews: 890,
-    category: "Starter Pack",
-    discount: 17,
-  },
-  ...featuredProducts,
   {
     id: 4,
     name: "2500 Robux",
@@ -91,6 +73,24 @@ const allProducts = [
     category: "High Value",
     discount: 17,
   },
+];
+
+/**
+ * All products data
+ */
+const allProducts = [
+  {
+    id: 1,
+    name: "1500 Robux",
+    price: 15,
+    originalPrice: 5.99,
+    image: "../images/15$.png",
+    rating: 4.6,
+    reviews: 890,
+    category: "Starter Pack",
+    discount: 17,
+  },
+  ...featuredProducts,
   {
     id: 7,
     name: "8000 Robux",
@@ -178,17 +178,15 @@ const allProducts = [
     reviews: 280,
     category: "Legendary",
     discount: 17,
-  }
+  },
 ];
 
-/**
- * Blog posts data
- */
 const blogPosts = [
   {
     id: 1,
     title: "Ultimate Guide to Earning Robux in 2025",
-    excerpt: "Discover the best legitimate ways to earn Robux and maximize your gaming experience in Roblox.",
+    excerpt:
+      "Discover the best legitimate ways to earn Robux and maximize your gaming experience in Roblox.",
     image: "../images/guide.jpeg",
     author: "Gaming Expert",
     date: "2025-01-15",
@@ -219,7 +217,8 @@ const blogPosts = [
   {
     id: 2,
     title: "Top 10 Roblox Games to Play This Month",
-    excerpt: "Check out the most popular and exciting Roblox games that are trending right now.",
+    excerpt:
+      "Check out the most popular and exciting Roblox games that are trending right now.",
     image: "../images/top-10.jpeg",
     author: "Game Reviewer",
     date: "2025-01-12",
@@ -240,7 +239,8 @@ const blogPosts = [
   {
     id: 3,
     title: "How to Stay Safe While Gaming Online",
-    excerpt: "Essential tips for protecting yourself and your account while enjoying online gaming.",
+    excerpt:
+      "Essential tips for protecting yourself and your account while enjoying online gaming.",
     image: "../images/saftey.jpeg",
     author: "Security Specialist",
     date: "2025-01-10",
@@ -256,11 +256,136 @@ const blogPosts = [
             <p>Create unique, strong passwords for your gaming accounts and enable two-factor authentication when available.</p>
         `,
   },
+  {
+    id: 4,
+    title: "How to Create Your First Roblox Game in 2025",
+    excerpt:
+      "A beginner’s step-by-step guide to designing and publishing your own game on Roblox Studio.",
+    image: "../images/How-to-Make-a-Roblox-Game-Featured-Image.jpg",
+    author: "Roblox Developer",
+    date: "2025-02-01",
+    category: "Guides",
+    readTime: "6 min read",
+    content: `
+            <p>Ever dreamed of making your own game on Roblox? With Roblox Studio, you can turn your ideas into reality, even if you’re new to game development. This guide walks you through the basics of creating your first game in 2025.</p>
+
+            <h3>Getting Started with Roblox Studio</h3>
+            <p>First, download Roblox Studio from the official Roblox website. It’s free and works on both Windows and Mac. Once installed, explore the interface—it’s packed with tools like terrain editors, part builders, and scripting options.</p>
+
+            <h3>Step 1: Plan Your Game</h3>
+            <p>Start with a simple idea. Maybe a racing game or an obstacle course (obby). Sketch out your concept, like the map layout or core mechanics. For example, if you’re making an obby, decide on themes like a lava escape or a sky-high challenge.</p>
+
+            <h3>Step 2: Build Your World</h3>
+            <p>Use the Studio’s drag-and-drop tools to create your environment. Add parts like platforms, walls, or decorations. Experiment with the Terrain Editor to craft landscapes, like mountains or rivers, to make your game pop.</p>
+
+            <h3>Step 3: Add Gameplay Mechanics</h3>
+            <p>Basic games don’t need complex coding. Use Roblox’s built-in templates, like the “Free Model” scripts for checkpoints or leaderboards. If you’re feeling adventurous, try learning Lua, Roblox’s scripting language, to add custom features like moving platforms.</p>
+
+            <h3>Step 4: Test and Publish</h3>
+            <p>Test your game in Studio’s Play mode to iron out bugs. Invite friends to try it out for feedback. When you’re ready, hit “Publish to Roblox” in Studio to share your game with the world. Promote it in Roblox groups or on social platforms to get players.</p>
+
+            <h3>Tips for Success</h3>
+            <p>Keep your first game simple to avoid getting overwhelmed. Check out Roblox’s Developer Hub for free tutorials and assets. And don’t forget to update your game based on player feedback to keep them coming back!</p>
+        `,
+  },
+  {
+    id: 5,
+    title: "Best Avatar Customization Tips for Roblox in 2025",
+    excerpt:
+      "Stand out in Roblox with these pro tips for creating a unique and stylish avatar without breaking the bank.",
+    image: "../images/avatar-style.jpeg",
+    author: "Style Guru",
+    date: "2025-01-28",
+    category: "Tips",
+    readTime: "5 min read",
+    content: `
+            <p>Your Roblox avatar is your identity in the metaverse, and in 2025, there are more customization options than ever. Whether you’re rocking a free account or splurging on Robux, these tips will help you create a standout look.</p>
+
+            <h3>Start with Free Items</h3>
+            <p>Roblox offers tons of free accessories, like hats, shirts, and hairstyles, in the Avatar Shop. Filter by “Free” to find gems that don’t cost a single Robux. Events like Roblox’s seasonal giveaways also drop exclusive free items, so keep an eye out.</p>
+
+            <h3>Mix and Match Styles</h3>
+            <p>Don’t just stick to one theme. Combine pieces like a futuristic helmet with a classic hoodie for a unique vibe. Layered clothing, introduced in recent years, lets you stack shirts and jackets for more depth.</p>
+
+            <h3>Shop Smart with Robux</h3>
+            <p>If you’re spending Robux, prioritize versatile items like dynamic heads or animations that work across multiple games. Check user-created catalogs for affordable, high-quality designs—sometimes they’re better than the premium stuff!</p>
+
+            <h3>Use Roblox Studio for Custom Looks</h3>
+            <p>Feeling creative? Use Roblox Studio to design your own clothes. You don’t need to be a pro designer—start with templates from the Developer Hub. Upload your creations for a small Robux fee and show off your personal style.</p>
+
+            <h3>Join Avatar Contests</h3>
+            <p>Roblox communities and groups often host avatar design contests with Robux or rare items as prizes. It’s a fun way to test your skills and maybe score some exclusive gear. Check Roblox’s official X account or community forums for upcoming events.</p>
+
+            <h3>Pro Tip: Save Your Outfits</h3>
+            <p>Use the Avatar Editor’s “Costumes” feature to save multiple outfits. This way, you can switch between looks for different games, like a sleek ninja for an obby or a goofy pet owner for Adopt Me!</p>
+        `,
+  },
+  {
+    id: 6,
+    title: "Secrets to Winning at Roblox Trading in 2025",
+    excerpt:
+      "Master the art of trading limited items and Robux to grow your inventory like a pro.",
+    image: "../images/trading-guide.jpeg",
+    author: "Trade Master",
+    date: "2025-02-10",
+    category: "Guides",
+    readTime: "6 min read",
+    content: `
+            <p>Trading in Roblox is one of the most exciting ways to score rare items and build your dream inventory. Whether you’re after a Dominus or a sparkly accessory, these tips will help you navigate the trading scene like a seasoned pro in 2025.</p>
+
+            <h3>Understand the Trading System</h3>
+            <p>Roblox’s trading system lets Premium members swap limited items, like hats or gear, with other players. Before you start, check if you have a Premium membership and enable trading in your account settings.</p>
+
+            <h3>Know Your Item Values</h3>
+            <p>Not all limiteds are created equal. Use community-driven sites like Rolimon’s or RBX.rocks to check the current value of items. For example, a Valkyrie Helm might be worth more than a few smaller limiteds combined. Stay updated to avoid overpaying.</p>
+
+            <h3>Start Small</h3>
+            <p>If you’re new, begin with low-value trades to learn the ropes. Trade common limiteds, like classic hats, before aiming for big-ticket items. This builds your rep and helps you spot good deals.</p>
+
+            <h3>Avoid Scams</h3>
+            <p>Scammers are everywhere. Never trade outside Roblox’s official system, and double-check the trade window before confirming. Watch out for “trust trades” or deals promising “free upgrades”—they’re usually traps.</p>
+
+            <h3>Negotiate Smart</h3>
+            <p>Join Roblox trading groups or Discord servers to find trade partners. Be polite but firm when negotiating. If someone offers a lowball, counter with a fair deal based on item values. Patience is key to landing great trades.</p>
+
+            <h3>Track Market Trends</h3>
+            <p>Item values fluctuate based on events or new releases. For example, limiteds often spike during Roblox’s Black Friday sales. Follow Roblox’s X posts or trading forums to stay ahead of trends and snag deals before prices climb.</p>
+        `,
+  },
+  {
+    id: 7,
+    title: "Why Roblox Events Are a Must in 2025",
+    excerpt:
+      "Don’t miss out on Roblox’s epic events—here’s why they’re a game-changer for players.",
+    image: "../images/roblox-events.jpeg",
+    author: "Event Enthusiast",
+    date: "2025-02-15",
+    category: "Community",
+    readTime: "4 min read",
+    content: `
+            <p>Roblox events are like virtual festivals, packed with exclusive rewards, new games, and community vibes. In 2025, they’re bigger than ever. Here’s why you should jump into every event this year.</p>
+
+            <h3>What Are Roblox Events?</h3>
+            <p>Events are special promotions where Roblox partners with brands, creators, or its own team to launch themed challenges, games, or items. Think holiday events like Halloween Hunt or collabs with brands like Nike or Marvel.</p>
+
+            <h3>Score Free Rewards</h3>
+            <p>Most events offer free items like accessories, emotes, or even limiteds just for playing. For example, last year’s Egg Hunt dropped exclusive avatar gear. Check the Events tab in Roblox to join active ones.</p>
+
+            <h3>Discover New Games</h3>
+            <p>Events often spotlight new or revamped games. Playing these can introduce you to hidden gems, like a new tycoon or simulator, that you might not have tried otherwise.</p>
+
+            <h3>Connect with the Community</h3>
+            <p>Events bring players together. Join friends or make new ones while tackling event challenges. Many events have group tasks, like teaming up in a game to unlock a badge.</p>
+
+            <h3>How to Stay in the Loop</h3>
+            <p>Follow Roblox’s official X account or join community groups to get event alerts. Some events are time-sensitive, so act fast to grab rewards before they’re gone. Pro tip: set a reminder for annual events like Bloxy Awards!</p>
+
+            <h3>Why They Matter</h3>
+            <p>Beyond free stuff, events keep Roblox fresh and fun. They’re a chance to show off your skills, flex new items, and be part of the platform’s biggest moments. Don’t sleep on them!</p>
+        `,
+  },
 ];
 
-/**
- * Initialize page
- */
 document.addEventListener("DOMContentLoaded", () => {
   // Show cookie popup if not accepted
   showCookiePopup();
@@ -275,8 +400,8 @@ document.addEventListener("DOMContentLoaded", () => {
     loadAllProducts();
   }
 
-  // Load blog posts
-  if (document.getElementById("blog-posts")) {
+  // Load blog posts - Skip if on blog index page
+  if (document.getElementById("blog-posts") && window.location.pathname !== "/blog/") {
     loadBlogPosts();
   }
 
@@ -322,14 +447,18 @@ function loadFeaturedProducts() {
   const container = document.getElementById("featured-products");
   if (!container) return;
 
-  container.innerHTML = featuredProducts.map((product) => createProductCard(product)).join("");
+  container.innerHTML = featuredProducts
+    .map((product) => createProductCard(product))
+    .join("");
 }
 
 function loadAllProducts() {
   const container = document.getElementById("products-grid");
   if (!container) return;
 
-  container.innerHTML = allProducts.map((product) => createProductCard(product)).join("");
+  container.innerHTML = allProducts
+    .map((product) => createProductCard(product))
+    .join("");
 }
 
 function createProductCard(product) {
@@ -337,7 +466,11 @@ function createProductCard(product) {
         <div class="col-md-6 col-lg-4">
             <div class="card bg-dark-card border-purple h-100 product-card">
                 <div class="card-header p-0 position-relative">
-                    ${product.discount > 0 ? `<span class="badge bg-danger badge-discount">-${product.discount}%</span>` : ""}
+                    ${
+                      product.discount > 0
+                        ? `<span class="badge bg-danger badge-discount">-${product.discount}%</span>`
+                        : ""
+                    }
                     <span class="badge bg-purple badge-category">${product.category}</span>
                     <img src="${product.image}" alt="${product.name}" class="card-img-top product-image" style="height: 200px; object-fit: cover;">
                 </div>
@@ -349,7 +482,11 @@ function createProductCard(product) {
                     </div>
                     <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
                         <span class="h4 text-purple mb-0">$${product.price}</span>
-                        ${product.originalPrice ? `<span class="text-muted text-decoration-line-through">$${product.originalPrice}</span>` : ""}
+                        ${
+                          product.originalPrice
+                            ? `<span class="text-muted text-decoration-line-through">$${product.originalPrice}</span>`
+                            : ""
+                        }
                     </div>
                     <button class="btn btn-gradient w-100" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart me-2"></i>
@@ -466,7 +603,7 @@ function loadCartItems() {
                 </div>
             </div>
         </div>
-    `,
+    `
     )
     .join("");
 
@@ -474,7 +611,10 @@ function loadCartItems() {
 }
 
 function updateCartSummary() {
-  const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const subtotal = cart.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
   const tax = subtotal * 0.08;
   const total = subtotal + tax;
 
@@ -514,7 +654,9 @@ function loadBlogPosts() {
                                 <i class="fas fa-user me-2"></i>
                                 <span class="me-3">${featuredPost.author}</span>
                                 <i class="fas fa-calendar me-2"></i>
-                                <span class="me-3">${new Date(featuredPost.date).toLocaleDateString()}</span>
+                                <span class="me-3">${new Date(
+                                  featuredPost.date
+                                ).toLocaleDateString()}</span>
                                 <span>${featuredPost.readTime}</span>
                             </div>
                             <a href="/blog/ultimate-guide-earning-robux-2025/" class="btn btn-gradient">
@@ -573,7 +715,10 @@ function initializeForms() {
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      showAlert("Thank you for your message! We'll get back to you soon.", "success");
+      showAlert(
+        "Thank you for your message! We'll get back to you soon.",
+        "success"
+      );
       this.reset();
     });
   }
@@ -634,7 +779,8 @@ function initializeForms() {
 function showAlert(message, type = "info") {
   const alertDiv = document.createElement("div");
   alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
-  alertDiv.style.cssText = "top: 20px; right: 20px; z-index: 1060; min-width: 300px;";
+  alertDiv.style.cssText =
+    "top: 20px; right: 20px; z-index: 1060; min-width: 300px;";
   alertDiv.innerHTML = `
         ${message}
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
@@ -668,11 +814,15 @@ function togglePasswordVisibility(inputId, iconId) {
  * Search functionality
  */
 function searchProducts(query) {
-  const filteredProducts = allProducts.filter((product) => product.name.toLowerCase().includes(query.toLowerCase()));
+  const filteredProducts = allProducts.filter((product) =>
+    product.name.toLowerCase().includes(query.toLowerCase())
+  );
 
   const container = document.getElementById("products-grid");
   if (container) {
-    container.innerHTML = filteredProducts.map((product) => createProductCard(product)).join("");
+    container.innerHTML = filteredProducts
+      .map((product) => createProductCard(product))
+      .join("");
   }
 }
 
@@ -699,6 +849,8 @@ function sortProducts(sortBy) {
 
   const container = document.getElementById("products-grid");
   if (container) {
-    container.innerHTML = sortedProducts.map((product) => createProductCard(product)).join("");
+    container.innerHTML = sortedProducts
+      .map((product) => createProductCard(product))
+      .join("");
   }
 }
