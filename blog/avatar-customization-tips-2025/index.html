@@ -90,6 +90,7 @@
       class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm backdrop-blur sticky-top"
     >
       <div class="container">
+        <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="/">
           <img
             src="../../images/Roblox_Logo.jpg"
@@ -100,19 +101,36 @@
           <span class="fw-bold text-white">RobuxVoucher</span>
         </a>
 
+        <!-- Mobile Toggle Button -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Collapsible Content -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-sm-auto text-end text-lg-start">
+          <!-- Mobile Close Button -->
+          <button
+            class="mobile-close d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+
+          <!-- Nav Links -->
+          <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
-              <a class="nav-link active px-3" href="/">Home</a>
+              <a class="nav-link px-3" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link px-3" href="../../catalog/">Catalog</a>
@@ -131,13 +149,24 @@
             </li>
           </ul>
 
-          <ul class="navbar-nav ms-sm-auto text-end text-lg-start">
+          <!-- Desktop Login/Register (visible on lg+) -->
+          <ul class="navbar-nav d-none d-lg-flex align-items-center">
             <li class="nav-item">
-              <a class="btn btn-outline-purple btn-sm" href="../../login/">
-                <i class="fas fa-user me-1"></i> Login
+              <a class="btn btn-purple btn-sm" href="../../register/">
+                <i class="fas fa-user-plus me-1"></i> Login
               </a>
             </li>
           </ul>
+
+          <!-- Mobile Login/Register (visible only on mobile) -->
+          <div class="mobile-auth-buttons d-lg-none mt-auto text-center">
+            <a class="btn btn-outline-purple" href="../../login/">
+              <i class="fas fa-user me-1"></i> Login
+            </a>
+            <a class="btn btn-purple mt-2" href="../../register/">
+              <i class="fas fa-user-plus me-1"></i> Register
+            </a>
+          </div>
         </div>
       </div>
     </nav>
