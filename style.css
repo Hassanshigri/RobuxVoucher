@@ -103,9 +103,7 @@ body {
   color: #e2e8f0;
   transition: color 0.3s ease;
 }
-.text-center {
-    text-align: right !important;
-}
+
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: var(--purple);
